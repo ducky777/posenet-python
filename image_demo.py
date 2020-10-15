@@ -5,6 +5,8 @@ import argparse
 import os
 from posenet.posenet_factory import load_model
 
+from tfjs_graph_converter import api
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--model', type=str, default='resnet50')  # mobilenet resnet50
 parser.add_argument('--stride', type=int, default=16)  # 8, 16, 32 (max 16 for mobilenet)
